@@ -20,29 +20,14 @@ function Layout({ children }) {
         <div className="flex flex-col font-sans min-h-screen text-gray-900">
           <Header siteTitle={data.site.siteMetadata.title} />
 
-          <div className="flex flex-col flex-1 md:justify-center max-w-4xl mx-auto px-4 py-8 md:p-8 w-full">
+          <div className="flex flex-col flex-1 md:justify-center w-full">
             {children}
           </div>
 
-          <footer className="bg-blue-500">
-            <div className="flex justify-between max-w-4xl mx-auto p-4 md:p-8 text-sm">
-              <p className="text-white">
-                Created by{" "}
-                <a
-                  href="https://taylorbryant.blog"
-                  className="font-bold no-underline text-white"
-                >
-                  Taylor Bryant
-                </a>
-              </p>
-
-              <p>
-                <a
-                  href="https://github.com/taylorbryant/gatsby-starter-tailwind"
-                  className="font-bold no-underline text-white"
-                >
-                  GitHub
-                </a>
+          <footer className="bg-black-300">
+            <div className="flex justify-center max-w-6xl mx-auto p-4 md:p-8 text-sm">
+              <p className="text-white font-semibold uppercase">
+                @ 2019 TREC Dental All Rights Reserved
               </p>
             </div>
           </footer>

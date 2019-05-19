@@ -25,6 +25,13 @@ module.exports = {
         tailwind: true,
         purgeOnly: ["src/css/style.css"]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        // eslint-disable-next-line no-useless-escape
+        fonts: [`Playfair Display\:900`, `Noto Sans`]
+      }
     }
   ]
 };

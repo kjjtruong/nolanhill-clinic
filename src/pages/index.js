@@ -2,7 +2,17 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import dogIllustration from "../images/dog-illustration.svg";
+import trecTeamImage from "../images/trec-team.jpg";
+import trecLogo from "../images/logo-trec.png";
+import clinicPhoto from "../images/clinic-photo-01.jpg";
+import smileBG from "../images/smile-bg.png";
+import checkmarkSVG from "../images/checkmark.svg";
+
+const bgIMG = {
+  backgroundImage: "url(" + smileBG + ")",
+  backgroundPosition: "55% 40%"
+};
 
 function IndexPage() {
   return (
@@ -11,28 +21,270 @@ function IndexPage() {
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
-
-      <div className="text-center">
-        <img
-          src={catAndHumanIllustration}
-          className="block mx-auto w-1/2"
-          alt="Cat and human sitting on a couch"
-        />
-
-        <h2 className="bg-yellow-400 text-2xl font-bold inline-block my-8 p-3">
-          Hey there! Welcome to your first Gatsby site.
+      <div
+        className="bg-nolan-blue flex flex-col items-center justify-center text-center h-screen px-4 md:px-20"
+        style={bgIMG}
+      >
+        <h1 className="font-serif text-white text-6xl font-bold inline-block">
+          Everyone smiles in the same language
+        </h1>
+        <a
+          href="#office"
+          className="bg-regal-blue text-lg text-white rounded-full py-4 px-8 mt-8"
+        >
+          Request appointment
+        </a>
+      </div>
+      {/* Section - Welcome */}
+      <div className="md:flex py-20 max-w-5xl mx-auto px-4">
+        <h2 className="font-serif text-4xl font-bold md:w-2/6">
+          Welcome to the Nolan Hill Clinic
         </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{" "}
-          <a
-            href="https://tailwindcss.com/"
-            className="font-bold no-underline text-gray-900"
-          >
-            Tailwind
-          </a>
-          , a utility-first CSS framework.
+        <p className="text-lg text-gray-600 mt-3 md:mt-0 md:w-4/6 md:pl-20">
+          Excited to be in the vibrant community of Nolan Hill, we invite you to
+          experience our new dental office. Our goal is to build relationships
+          with families in our neighbourhood while providing gentle and caring
+          dental treatment. We want to make your dental visits with us
+          comfortable, whatever your needs may be.
         </p>
+      </div>
+      {/* Section - Gallery */}
+      <div className="bg-black w-screen py-20">
+        <img
+          className="w-1/4 mx-auto"
+          src={dogIllustration}
+          alt="A dog relaxing"
+        />
+      </div>
+      <div className="relative flex flex-col items-center py-20 max-w-4xl mx-auto px-4">
+        <h2 className="font-serif text-center text-4xl font-bold">
+          We are a full service dental clinic where your health is our highest
+          priority
+        </h2>
+        <div className="w-full mt-12 flex flex-row md:flex-col justify-center items-center">
+          <div className="flex flex-col md:flex-row w-1/2 md:w-full">
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+              <span className="mr-4 md:mr-6">
+                <img className="w-6" src={checkmarkSVG} />
+              </span>
+              Examinations
+            </p>
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+              <span className="mr-4 md:mr-6">
+                <img className="w-6" src={checkmarkSVG} />
+              </span>
+              Children's Dentistry
+            </p>
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+              <span className="mr-4 md:mr-6">
+                <img className="w-6" src={checkmarkSVG} />
+              </span>
+              Cleaning
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row w-1/2 md:w-full md:mt-8">
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+              <span className="mr-4 md:mr-6">
+                <img className="w-6" src={checkmarkSVG} />
+              </span>
+              Braces
+            </p>
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+              <span className="mr-4 md:mr-6">
+                <img className="w-6" src={checkmarkSVG} />
+              </span>
+              Invisalign
+            </p>
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+              <span className="mr-4 md:mr-6">
+                <img className="w-6" src={checkmarkSVG} />
+              </span>
+              Teeth Whitening
+            </p>
+          </div>
+        </div>
+        <a
+          href="#"
+          className="bg-regal-blue text-lg text-white rounded-full mt-16 py-4 px-8"
+        >
+          Show full list of services
+        </a>
+        <div className="bg-black w-64 h-px absolute bottom-0" />
+      </div>
+      <div className="flex flex-col items-center pt-20 pb-48 max-w-4xl mx-auto px-4">
+        <h2 className="font-serif text-center text-4xl font-bold">
+          Stop guessing what your fees are
+        </h2>
+        <p class="text-lg text-gray-600 mt-3">
+          In 2017, the{" "}
+          <a
+            className="text-regal-blue text-lg font-semibold hover:underline"
+            href="http://www.dentalhealthalberta.ca/index/Pages/alberta-dental-fee-guide-5423"
+            target="_blank"
+          >
+            Alberta Dental Association
+          </a>{" "}
+          and College unveiled the new dental fee guide for our province—the
+          first of its kind in twenty years. Most importantly, the new dental
+          fee guide, allows all our patients to feel comfortable knowing that
+          they’re paying exactly what they’re supposed to pay. Therefore, we are
+          proud to say that Nolan Hill Dental is ADA Fee Guide Compliant.
+        </p>
+        <a
+          className="text-regal-blue text-lg font-semibold border-2 border-regal-blue rounded-full py-4 px-8  mt-8"
+          href="http://www.dentalhealthalberta.ca/index/Pages/alberta-dental-fee-guide-5423"
+          target="_blank"
+        >
+          Learn more
+        </a>
+      </div>
+      <div className="bg-wall-gray">
+        <div className="relative flex flex-col items-center py-20 max-w-4xl mx-auto px-4 pt-48">
+          <div className="absolute bg-gray-400 w-full top-0 left-0 -mt-24">
+            <img
+              className="object-cover object-top h-64 w-full"
+              src={trecTeamImage}
+            />
+          </div>
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-2/6 md:order-last mb-8">
+              <img
+                className="mx-auto md:mt-20"
+                src={trecLogo}
+                alt="TREC logo"
+              />
+            </div>
+            <div className="md:w-4/6 md:pr-16">
+              <h2 className="font-serif text-4xl font-bold">
+                Proud to be a part of the TREC Dental family
+              </h2>
+              <p class="text-lg text-gray-600 mt-3">
+                Nolan Hill Dental is a part of TREC Dental family and group of
+                dental clinics. TREC’s core values are right in the name,{" "}
+                <span className="font-black text-trec-blue">Teamwork</span>,{" "}
+                <span className="font-black text-trec-red">Respect</span>,{" "}
+                <span className="font-black text-trec-orange">
+                  Exceptional Dentistry
+                </span>{" "}
+                and{" "}
+                <span className="font-black text-trec-green">
+                  Continuous Improvement
+                </span>
+                . That means TREC Dental clinics provide amazing dentistry while
+                spending our time doing good.
+              </p>
+              <a
+                className="text-regal-blue text-lg font-semibold border-2 border-regal-blue rounded-full inline-block py-4 px-8  mt-8"
+                href="https://trecdental.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-wall-gray w-screen">
+        <img
+          className="object-cover w-full h-full"
+          src={clinicPhoto}
+          alt="Nolan Hill waiting area"
+        />
+      </div>
+      <div id="office" className="bg-wall-black text-white py-20">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="font-serif text-4xl font-bold mb-10">
+            Office Information
+          </h2>
+          <div className="flex flex-col md:flex-row">
+            <div className="md:w-1/2">
+              <h3 className="font-serif text-3xl mb-2">Contact</h3>
+              <p>
+                <a className="underline" href="tel:4034555717">
+                  (403) 455-5717
+                </a>
+              </p>
+              <p>
+                <a className="underline" href="mailto:nolanhill@trecdental.com">
+                  nolanhill@trecdental.com
+                </a>
+              </p>
+              <h3 className="font-serif text-3xl mt-8 mb-2">Address</h3>
+              <p>
+                <a
+                  className="underline"
+                  href="https://goo.gl/maps/BYNfYUdCjrpcypmj9"
+                  target="_blank"
+                >
+                  202 – 8 Nolan Hill Blvd NW Calgary, Alberta, T3R 0X2
+                </a>
+              </p>
+              <h3 className="font-serif text-3xl mt-8 mb-2">Office hours</h3>
+              <p>
+                <ul>
+                  <li>Mon 10:00 am – 6:00 pm</li>
+                  <li>Tue 10:00 am – 6:00 pm</li>
+                  <li>Wed 7:00 am – 3:00 pm</li>
+                  <li>Thu 7:00 am – 3:00 pm</li>
+                  <li>Fri 7:00 am – 3:00 pm</li>
+                  <li>Sat 8:00 am – 2:00 pm (twice/month)</li>
+                </ul>
+              </p>
+            </div>
+            <div className="mt-3 md:mt-0 md:w-1/2 mt-8">
+              <h3 className="font-serif text-3xl mb-2">Message us</h3>
+              <p className="text-lg">
+                <form className="mx-auto w-full">
+                  <label
+                    className="block font-bold mb-2 text-xs uppercase"
+                    htmlFor="first-name"
+                  >
+                    Email*
+                  </label>
+
+                  <input
+                    className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
+                    id="email-address"
+                    type="email"
+                    placeholder="Enter your email address"
+                  />
+
+                  <label
+                    className="block font-bold mb-2 text-xs uppercase"
+                    htmlFor="full-name"
+                  >
+                    Name*
+                  </label>
+
+                  <input
+                    className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
+                    id="last-name"
+                    type="text"
+                    placeholder="Enter your name"
+                  />
+
+                  <label
+                    className="block font-bold mb-2 text-xs uppercase"
+                    htmlFor="message"
+                  >
+                    Message*
+                  </label>
+
+                  <textarea
+                    className="appearance-none bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
+                    placeholder="Write your message here..."
+                    rows="8"
+                  />
+
+                  <button className="bg-regal-blue text-lg text-white rounded-full py-4 px-8">
+                    Send message
+                  </button>
+                </form>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   );
