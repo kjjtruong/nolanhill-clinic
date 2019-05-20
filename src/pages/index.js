@@ -1,4 +1,6 @@
 import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -8,6 +10,11 @@ import trecLogo from "../images/logo-trec.png";
 import clinicPhoto from "../images/clinic-photo-01.jpg";
 import smileBG from "../images/smile-bg.png";
 import checkmarkSVG from "../images/checkmark.svg";
+import slider1Image from "../images/slider-photo-1.jpg";
+import slider2Image from "../images/slider-photo-2.jpg";
+import slider3Image from "../images/slider-photo-3.jpg";
+import slider4Image from "../images/slider-photo-4.jpg";
+import slider5Image from "../images/slider-photo-5.jpg";
 
 const bgIMG = {
   backgroundImage: "url(" + smileBG + ")",
@@ -22,15 +29,15 @@ function IndexPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
       <div
-        className="bg-nolan-blue flex flex-col items-center justify-center text-center h-screen px-4 md:px-20"
+        className="bg-nolan-blue flex flex-col items-center justify-center md:text-center h-screen px-4 md:px-20"
         style={bgIMG}
       >
-        <h1 className="font-serif text-white text-6xl font-bold inline-block">
+        <h1 className="font-serif text-white text-5xl md:text-6xl font-bold">
           Everyone smiles in the same language
         </h1>
         <a
           href="#office"
-          className="bg-regal-blue text-lg text-white rounded-full py-4 px-8 mt-8"
+          className="bg-regal-blue text-lg text-white rounded-full py-4 px-8 mt-8 self-start md:self-center"
         >
           Request appointment
         </a>
@@ -49,53 +56,65 @@ function IndexPage() {
         </p>
       </div>
       {/* Section - Gallery */}
-      <div className="bg-black w-screen py-20">
-        <img
-          className="w-1/4 mx-auto"
-          src={dogIllustration}
-          alt="A dog relaxing"
-        />
+      <div className="bg-black w-screen">
+        <Carousel showThumbs={false} emulateTouch={true} infiniteLoop={true}>
+          <div className="h-full">
+            <img className="" src={slider1Image} />
+          </div>
+          <div className="h-64">
+            <img className="object-bottom" src={slider2Image} />
+          </div>
+          <div className="h-64">
+            <img src={slider3Image} />
+          </div>
+          <div className="h-64">
+            <img src={slider4Image} />
+          </div>
+          <div className="h-64">
+            <img src={slider5Image} />
+          </div>
+        </Carousel>
       </div>
       <div className="relative flex flex-col items-center py-20 max-w-4xl mx-auto px-4">
-        <h2 className="font-serif text-center text-4xl font-bold">
+        <h2 className="font-serif md:text-center text-4xl font-bold">
           We are a full service dental clinic where your health is our highest
           priority
         </h2>
-        <div className="w-full mt-12 flex flex-row md:flex-col justify-center items-center">
-          <div className="flex flex-col md:flex-row w-1/2 md:w-full">
+        <div className="w-full mt-12 flex flex-col justify-center items-center">
+          <div className="flex flex-col md:flex-row w-full">
             <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
               <span className="mr-4 md:mr-6">
                 <img className="w-6" src={checkmarkSVG} />
               </span>
               Examinations
             </p>
-            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
                 <img className="w-6" src={checkmarkSVG} />
               </span>
               Children's Dentistry
             </p>
-            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
                 <img className="w-6" src={checkmarkSVG} />
               </span>
               Cleaning
             </p>
           </div>
-          <div className="flex flex-col md:flex-row w-1/2 md:w-full md:mt-8">
-            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+          <div className="flex flex-col md:flex-row w-full md:mt-8">
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
                 <img className="w-6" src={checkmarkSVG} />
               </span>
               Braces
             </p>
-            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
                 <img className="w-6" src={checkmarkSVG} />
               </span>
               Invisalign
             </p>
-            <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
+            <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
                 <img className="w-6" src={checkmarkSVG} />
               </span>
@@ -105,14 +124,14 @@ function IndexPage() {
         </div>
         <a
           href="#"
-          className="bg-regal-blue text-lg text-white rounded-full mt-16 py-4 px-8"
+          className="self-start md:self-center bg-regal-blue text-lg text-white rounded-full mt-16 py-4 px-8"
         >
           Show full list of services
         </a>
         <div className="bg-black w-64 h-px absolute bottom-0" />
       </div>
       <div className="flex flex-col items-center pt-20 pb-48 max-w-4xl mx-auto px-4">
-        <h2 className="font-serif text-center text-4xl font-bold">
+        <h2 className="font-serif md:text-center text-4xl font-bold">
           Stop guessing what your fees are
         </h2>
         <p class="text-lg text-gray-600 mt-3">
@@ -131,7 +150,7 @@ function IndexPage() {
           proud to say that Nolan Hill Dental is ADA Fee Guide Compliant.
         </p>
         <a
-          className="text-regal-blue text-lg font-semibold border-2 border-regal-blue rounded-full py-4 px-8  mt-8"
+          className="text-regal-blue text-lg font-semibold border-2 border-regal-blue rounded-full py-4 px-8 mt-8 self-start md:self-center"
           href="http://www.dentalhealthalberta.ca/index/Pages/alberta-dental-fee-guide-5423"
           target="_blank"
         >
@@ -206,8 +225,11 @@ function IndexPage() {
                 </a>
               </p>
               <p>
-                <a className="underline" href="mailto:nolanhill@trecdental.com">
-                  nolanhill@trecdental.com
+                <a
+                  className="underline"
+                  href="mailto:nol sliderill@trecdental.com"
+                >
+                  nol sliderill@trecdental.com
                 </a>
               </p>
               <h3 className="font-serif text-3xl mt-8 mb-2">Address</h3>
