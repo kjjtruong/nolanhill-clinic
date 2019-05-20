@@ -37,7 +37,11 @@ function AboutPage() {
         {/* Christina */}
         <div className="flex flex-col md:flex-row">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={christinaProfilePhoto} />
+            <img
+              className="w-full"
+              src={christinaProfilePhoto}
+              alt="Dr. Christina Coakwell"
+            />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -59,7 +63,7 @@ function AboutPage() {
         {/* Dan */}
         <div className="flex flex-col md:flex-row-reverse mt-20">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={danProfilePhoto} />
+            <img className="w-full" src={danProfilePhoto} alt="Dr. Dan Park" />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -81,7 +85,7 @@ function AboutPage() {
         {/* Tracy */}
         <div className="flex flex-col md:flex-row mt-20">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={tracyProfilePhoto} />
+            <img className="w-full" src={tracyProfilePhoto} alt="Tracy" />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -105,7 +109,7 @@ function AboutPage() {
         {/* Reilly */}
         <div className="flex flex-col md:flex-row-reverse mt-20">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={reillyProfilePhoto} />
+            <img className="w-full" src={reillyProfilePhoto} alt="Reilly" />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -128,7 +132,7 @@ function AboutPage() {
         {/* Catarina */}
         <div className="flex flex-col md:flex-row mt-20">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={catarinaProfilePhoto} />
+            <img className="w-full" src={catarinaProfilePhoto} alt="Catarina" />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -148,7 +152,7 @@ function AboutPage() {
         {/* Kristina */}
         <div className="flex flex-col md:flex-row-reverse mt-20">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={kristinaProfilePhoto} />
+            <img className="w-full" src={kristinaProfilePhoto} alt="Kristina" />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -169,7 +173,7 @@ function AboutPage() {
         {/* Ellen */}
         <div className="flex flex-col md:flex-row mt-20">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={ellenProfilePhoto} />
+            <img className="w-full" src={ellenProfilePhoto} alt="Ellen" />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -189,7 +193,7 @@ function AboutPage() {
         {/* Erin */}
         <div className="flex flex-col md:flex-row-reverse mt-20">
           <div className="md:w-5/12 mb-8 md:mb-0">
-            <img className="w-full" src={erinProfilePhoto} />
+            <img className="w-full" src={erinProfilePhoto} alt="Erin" />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
             <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
@@ -214,7 +218,7 @@ function AboutPage() {
           Get to know us on Facebook
         </h2>
         <a
-          href="#"
+          href="https://www.facebook.com/1655110724745241"
           className="bg-regal-blue text-lg text-white rounded-full mt-16 py-4 px-8"
         >
           Follow us on Facebook

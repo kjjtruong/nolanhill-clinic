@@ -16,10 +16,15 @@ import slider3Image from "../images/slider-photo-3.jpg";
 import slider4Image from "../images/slider-photo-4.jpg";
 import slider5Image from "../images/slider-photo-5.jpg";
 
-const bgIMG = {
-  backgroundImage: "url(" + smileBG + ")",
-  backgroundPosition: "55% 40%"
-};
+const HeaderSection = styled.div`
+  background-image: url(${smileBG});
+  background-position: 55% 33%;
+  @media screen and (min-width: 768px) {
+    & {
+      background-position: 55% 40%;
+    }
+  }
+`;
 
 const ImageWrapper = styled.div`
   position: relative;
@@ -46,10 +51,7 @@ function IndexPage() {
         title="Home"
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
-      <div
-        className="bg-nolan-blue flex flex-col items-center justify-center md:text-center h-screen px-4 md:px-20"
-        style={bgIMG}
-      >
+      <HeaderSection className="bg-nolan-blue flex flex-col items-center justify-center md:text-center h-screen px-4 md:px-20">
         <h1 className="font-serif text-white text-5xl md:text-6xl font-bold leading-tight">
           Everyone smiles in the same language
         </h1>
@@ -59,7 +61,7 @@ function IndexPage() {
         >
           Request appointment
         </a>
-      </div>
+      </HeaderSection>
       {/* Section - Welcome */}
       <div className="md:flex py-20 max-w-5xl mx-auto px-4">
         <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight md:w-2/6">
@@ -77,19 +79,31 @@ function IndexPage() {
       <div className="bg-black w-screen">
         <Carousel showThumbs={false} emulateTouch={true} infiniteLoop={true}>
           <div className="h-full">
-            <img className="object-cover h-full" src={slider1Image} />
+            <img
+              className="object-cover h-full"
+              src={slider1Image}
+              alt="nolan hill team"
+            />
           </div>
           <div className="h-64">
-            <img className="object-bottom" src={slider2Image} />
+            <img
+              className="object-bottom"
+              src={slider2Image}
+              alt="nolan hill reception"
+            />
           </div>
           <div className="h-64">
-            <img src={slider3Image} />
+            <img src={slider3Image} alt="nolan hill waiting area" />
           </div>
           <div className="h-64">
-            <img src={slider4Image} />
+            <img src={slider4Image} alt="nolan hill dental office 1" />
           </div>
           <div className="h-64">
-            <img className="object-cover h-full" src={slider5Image} />
+            <img
+              className="object-cover h-full"
+              src={slider5Image}
+              alt="nolan hill dental office 2"
+            />
           </div>
         </Carousel>
       </div>
@@ -102,19 +116,19 @@ function IndexPage() {
           <div className="flex flex-col md:flex-row w-full">
             <p className="flex font-serif text-regal-blue text-lg md:w-1/3">
               <span className="mr-4 md:mr-6">
-                <img className="w-6" src={checkmarkSVG} />
+                <img className="w-6" src={checkmarkSVG} alt="checkmark icon" />
               </span>
               Examinations
             </p>
             <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
-                <img className="w-6" src={checkmarkSVG} />
+                <img className="w-6" src={checkmarkSVG} alt="checkmark icon" />
               </span>
               Children's Dentistry
             </p>
             <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
-                <img className="w-6" src={checkmarkSVG} />
+                <img className="w-6" src={checkmarkSVG} alt="checkmark icon" />
               </span>
               Cleaning
             </p>
@@ -122,19 +136,19 @@ function IndexPage() {
           <div className="flex flex-col md:flex-row w-full md:mt-8">
             <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
-                <img className="w-6" src={checkmarkSVG} />
+                <img className="w-6" src={checkmarkSVG} alt="checkmark icon" />
               </span>
               Braces
             </p>
             <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
-                <img className="w-6" src={checkmarkSVG} />
+                <img className="w-6" src={checkmarkSVG} alt="checkmark icon" />
               </span>
               Invisalign
             </p>
             <p className="flex font-serif text-regal-blue text-lg md:w-1/3 mt-2 md:mt-0">
               <span className="mr-4 md:mr-6">
-                <img className="w-6" src={checkmarkSVG} />
+                <img className="w-6" src={checkmarkSVG} alt="checkmark icon" />
               </span>
               Teeth Whitening
             </p>
@@ -158,6 +172,7 @@ function IndexPage() {
             className="text-regal-blue text-lg font-semibold hover:underline"
             href="http://www.dentalhealthalberta.ca/index/Pages/alberta-dental-fee-guide-5423"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Alberta Dental Association
           </a>{" "}
@@ -168,9 +183,10 @@ function IndexPage() {
           proud to say that Nolan Hill Dental is ADA Fee Guide Compliant.
         </p>
         <a
-          className="text-regal-blue text-lg border-2 border-regal-blue rounded-full py-4 px-8 mt-8 self-start md:self-center"
+          className="text-regal-blue hover:text-white hover:bg-regal-blue text-lg border-2 border-regal-blue rounded-full py-4 px-8 mt-8 self-start md:self-center"
           href="http://www.dentalhealthalberta.ca/index/Pages/alberta-dental-fee-guide-5423"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Learn more
         </a>
@@ -179,7 +195,11 @@ function IndexPage() {
         <div className="relative flex flex-col items-center pb-20 md:py-20 max-w-4xl mx-auto md:pt-64">
           <div class="md:absolute bg-gray-400 w-full top-0 left-0 mb-10 md:-mt-32">
             <ImageWrapper className="">
-              <img className="object-cover object-top" src={trecTeamImage} />
+              <img
+                className="object-cover object-top"
+                src={trecTeamImage}
+                alt="TREC Dental team"
+              />
             </ImageWrapper>
           </div>
           <div className="flex flex-col md:flex-row px-4">
@@ -210,7 +230,7 @@ function IndexPage() {
                 spending our time doing good.
               </p>
               <a
-                className="text-regal-blue text-lg border-2 border-regal-blue rounded-full inline-block py-4 px-8  mt-8"
+                className="text-regal-blue hover:text-white hover:bg-regal-blue text-lg border-2 border-regal-blue rounded-full inline-block py-4 px-8  mt-8"
                 href="https://trecdental.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -257,6 +277,7 @@ function IndexPage() {
                   className="underline"
                   href="https://goo.gl/maps/BYNfYUdCjrpcypmj9"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   202 – 8 Nolan Hill Blvd NW Calgary, Alberta, T3R 0X2 (view on
                   Google Map)
