@@ -12,7 +12,11 @@ function Header({ siteTitle }) {
       {/* Desktop Nav */}
       <div className="invisible md:visible absolute bg-transparent flex flex-wrap items-center justify-between w-screen mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
-          <img className="fill-current h-16 mr-2" src={nolanLogo} />
+          <img
+            className="fill-current h-16 mr-2"
+            src={nolanLogo}
+            alt="Nolan Hill Logo"
+          />
         </Link>
 
         <button
@@ -60,7 +64,11 @@ function Header({ siteTitle }) {
       {/* Mobile Nav */}
       <div className="visible md:invisible fixed bg-white flex flex-wrap items-center justify-between w-screen mx-auto px-4 py-2 md:p-8 shadow-md">
         <Link to="/" className="flex items-center no-underline text-white">
-          <img className="fill-current h-16 mr-2" src={nolanBlackLogo} />
+          <img
+            className="fill-current h-16 mr-2"
+            src={nolanBlackLogo}
+            alt="Nolan Hill logo"
+          />
         </Link>
 
         <button
