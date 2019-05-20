@@ -155,10 +155,10 @@ function IndexPage() {
           </div>
         </div>
         <a
-          href="#"
+          href="/#office"
           className="self-start md:self-center bg-regal-blue text-lg text-white rounded-full mt-16 py-4 px-8"
         >
-          Show full list of services
+          Request an appointment today
         </a>
         <div className="bg-black w-64 h-px absolute bottom-0" />
       </div>
@@ -273,14 +273,18 @@ function IndexPage() {
                 Address
               </h3>
               <p>
+                202 – 8 Nolan Hill Blvd NW <br />
+                Calgary, Alberta,
+                <br />
+                T3R 0X2
+                <br />
                 <a
                   className="underline"
                   href="https://goo.gl/maps/BYNfYUdCjrpcypmj9"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  202 – 8 Nolan Hill Blvd NW Calgary, Alberta, T3R 0X2 (view on
-                  Google Map)
+                  (View on Google Map)
                 </a>
               </p>
               <h3 className="font-serif text-2xl md:text-3xl mt-8 mb-2">
