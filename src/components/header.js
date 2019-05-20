@@ -82,7 +82,7 @@ function Header({ siteTitle }) {
             isExpanded ? `block` : `hidden`
           } md:block md:flex md:items-center w-full md:w-auto`}
         >
-          <div className="text-md">
+          <div className="text-lg mb-4">
             <Link
               to="/"
               className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-regal-blue"
