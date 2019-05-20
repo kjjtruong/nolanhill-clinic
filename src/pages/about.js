@@ -20,14 +20,14 @@ function AboutPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
-      <div className="bg-trec-orange flex flex-col items-center justify-center text-center h-64 px-4 py-40">
-        <h1 className="font-serif text-white text-6xl font-bold inline-block">
+      <div className="bg-trec-orange flex flex-col justify-center text-center h-64 px-4 py-40">
+        <h1 className="font-serif text-white text-5xl md:text-6xl font-bold leading-tight self-start md:self-center inline-block">
           Meet our team
         </h1>
       </div>
       <div className="bg-wall-gray">
         <div className="md:flex py-20 max-w-4xl mx-auto px-4">
-          <h2 className="font-serif text-4xl font-bold text-center">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight md:text-center">
             Our clinic is a place where comfort meets dentistry. Meet the Nolan
             Hill Dental family where we’re all smiles.
           </h2>
@@ -40,7 +40,7 @@ function AboutPage() {
             <img className="w-full" src={christinaProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Dr. Christina Coakwell
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -62,7 +62,7 @@ function AboutPage() {
             <img className="w-full" src={danProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Dr. Dan Park
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -84,7 +84,7 @@ function AboutPage() {
             <img className="w-full" src={tracyProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Tracy
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -108,7 +108,7 @@ function AboutPage() {
             <img className="w-full" src={reillyProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Reilly
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -130,7 +130,7 @@ function AboutPage() {
             <img className="w-full" src={catarinaProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Catarina
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -150,7 +150,7 @@ function AboutPage() {
             <img className="w-full" src={kristinaProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Kristina
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -171,7 +171,7 @@ function AboutPage() {
             <img className="w-full" src={ellenProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pl-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Ellen
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -191,7 +191,7 @@ function AboutPage() {
             <img className="w-full" src={erinProfilePhoto} />
           </div>
           <div className="md:w-7/12 flex flex-col justify-center md:pr-20">
-            <h2 className="font-serif text-4xl font-bold text-regal-blue">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight text-regal-blue">
               Erin
             </h2>
             <p className="text-lg font-black uppercase tracking-wider my-2">
@@ -209,7 +209,7 @@ function AboutPage() {
         <div className="bg-black w-64 h-px absolute bottom-0" />
       </div>
       <div className="relative flex flex-col items-center py-20 max-w-4xl mx-auto px-4">
-        <h2 className="font-serif text-center text-4xl font-bold">
+        <h2 className="font-serif text-center text-3xl md:text-4xl font-bold leading-tight">
           Get to know us on Facebook
         </h2>
         <a

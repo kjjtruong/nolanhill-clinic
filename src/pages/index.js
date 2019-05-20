@@ -32,7 +32,7 @@ function IndexPage() {
         className="bg-nolan-blue flex flex-col items-center justify-center md:text-center h-screen px-4 md:px-20"
         style={bgIMG}
       >
-        <h1 className="font-serif text-white text-5xl md:text-6xl font-bold">
+        <h1 className="font-serif text-white text-5xl md:text-6xl font-bold leading-tight">
           Everyone smiles in the same language
         </h1>
         <a
@@ -44,7 +44,7 @@ function IndexPage() {
       </div>
       {/* Section - Welcome */}
       <div className="md:flex py-20 max-w-5xl mx-auto px-4">
-        <h2 className="font-serif text-4xl font-bold md:w-2/6">
+        <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight md:w-2/6">
           Welcome to the Nolan Hill Clinic
         </h2>
         <p className="text-lg text-gray-600 mt-3 md:mt-0 md:w-4/6 md:pl-20">
@@ -59,7 +59,7 @@ function IndexPage() {
       <div className="bg-black w-screen">
         <Carousel showThumbs={false} emulateTouch={true} infiniteLoop={true}>
           <div className="h-full">
-            <img className="" src={slider1Image} />
+            <img className="object-cover h-full" src={slider1Image} />
           </div>
           <div className="h-64">
             <img className="object-bottom" src={slider2Image} />
@@ -71,12 +71,12 @@ function IndexPage() {
             <img src={slider4Image} />
           </div>
           <div className="h-64">
-            <img src={slider5Image} />
+            <img className="object-cover h-full" src={slider5Image} />
           </div>
         </Carousel>
       </div>
       <div className="relative flex flex-col items-center py-20 max-w-4xl mx-auto px-4">
-        <h2 className="font-serif md:text-center text-4xl font-bold">
+        <h2 className="font-serif md:text-center text-3xl md:text-4xl font-bold leading-tight">
           We are a full service dental clinic where your health is our highest
           priority
         </h2>
@@ -131,7 +131,7 @@ function IndexPage() {
         <div className="bg-black w-64 h-px absolute bottom-0" />
       </div>
       <div className="flex flex-col items-center pt-20 pb-48 max-w-4xl mx-auto px-4">
-        <h2 className="font-serif md:text-center text-4xl font-bold">
+        <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight self-start md:self-center">
           Stop guessing what your fees are
         </h2>
         <p class="text-lg text-gray-600 mt-3">
@@ -168,13 +168,13 @@ function IndexPage() {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-2/6 md:order-last mb-8">
               <img
-                className="mx-auto md:mt-20"
+                className="md:mx-auto md:mt-20"
                 src={trecLogo}
                 alt="TREC logo"
               />
             </div>
             <div className="md:w-4/6 md:pr-16">
-              <h2 className="font-serif text-4xl font-bold">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
                 Proud to be a part of the TREC Dental family
               </h2>
               <p class="text-lg text-gray-600 mt-3">
@@ -213,12 +213,12 @@ function IndexPage() {
       </div>
       <div id="office" className="bg-wall-black text-white py-20">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="font-serif text-4xl font-bold mb-10">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold mb-10">
             Office Information
           </h2>
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2">
-              <h3 className="font-serif text-3xl mb-2">Contact</h3>
+              <h3 className="font-serif text-2xl md:text-3xl mb-2">Contact</h3>
               <p>
                 <a className="underline" href="tel:4034555717">
                   (403) 455-5717
@@ -232,7 +232,9 @@ function IndexPage() {
                   nol sliderill@trecdental.com
                 </a>
               </p>
-              <h3 className="font-serif text-3xl mt-8 mb-2">Address</h3>
+              <h3 className="font-serif text-2xl md:text-3xl mt-8 mb-2">
+                Address
+              </h3>
               <p>
                 <a
                   className="underline"
@@ -242,7 +244,9 @@ function IndexPage() {
                   202 – 8 Nolan Hill Blvd NW Calgary, Alberta, T3R 0X2
                 </a>
               </p>
-              <h3 className="font-serif text-3xl mt-8 mb-2">Office hours</h3>
+              <h3 className="font-serif text-2xl md:text-3xl mt-8 mb-2">
+                Office hours
+              </h3>
               <p>
                 <ul>
                   <li>Mon 10:00 am – 6:00 pm</li>
@@ -255,7 +259,9 @@ function IndexPage() {
               </p>
             </div>
             <div className="mt-3 md:mt-0 md:w-1/2 mt-8">
-              <h3 className="font-serif text-3xl mb-2">Message us</h3>
+              <h3 className="font-serif text-2xl md:text-3xl mb-2">
+                Message us
+              </h3>
               <p className="text-lg">
                 <form className="mx-auto w-full">
                   <label
@@ -266,7 +272,7 @@ function IndexPage() {
                   </label>
 
                   <input
-                    className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
+                    className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded text-gray-700 w-full"
                     id="email-address"
                     type="email"
                     placeholder="Enter your email address"
@@ -280,7 +286,7 @@ function IndexPage() {
                   </label>
 
                   <input
-                    className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
+                    className="appearance-none block bg-gray-200 mb-6 px-3 py-2 rounded text-gray-700 w-full"
                     id="last-name"
                     type="text"
                     placeholder="Enter your name"
@@ -294,7 +300,7 @@ function IndexPage() {
                   </label>
 
                   <textarea
-                    className="appearance-none bg-gray-200 mb-6 px-3 py-2 rounded-md text-gray-700 w-full"
+                    className="appearance-none bg-gray-200 mb-6 px-3 py-2 rounded text-gray-700 w-full"
                     placeholder="Write your message here..."
                     rows="8"
                   />
