@@ -49,7 +49,7 @@ function IndexPage() {
     <Layout>
       <SEO
         title="Home"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`nolan hill`, `dentist`, `dental`, `calgary`]}
       />
       <HeaderSection className="bg-nolan-blue flex flex-col items-center justify-center md:text-center h-screen px-4 md:px-20">
         <h1 className="font-serif text-white text-5xl md:text-6xl font-bold leading-tight">

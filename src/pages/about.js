@@ -17,7 +17,7 @@ function AboutPage() {
     <Layout>
       <SEO
         title="About"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`nolan hill`, `dentist`, `dental`, `calgary`]}
       />
 
       <div className="bg-trec-orange flex flex-col justify-center text-center h-64 px-4 pb-20 pt-64">

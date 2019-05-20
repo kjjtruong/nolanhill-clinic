@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`
+    title: `Nolan Hill Dental`,
+    description: `Nolan Hill Dental Clinic Northwest Calgary`,
+    author: `Ken Truong`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
