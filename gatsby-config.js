@@ -32,6 +32,12 @@ module.exports = {
         // eslint-disable-next-line no-useless-escape
         fonts: [`Playfair Display\:900`, `Noto Sans`]
       }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      }
     }
   ]
 };

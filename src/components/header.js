@@ -6,7 +6,7 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="fixed bg-teal-500 z-40">
+    <nav className="absolute bg-transparent z-40">
       <div className="flex flex-wrap items-center justify-between w-screen mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-white">
           <svg
@@ -56,10 +56,10 @@ function Header({ siteTitle }) {
             </Link>
 
             <Link
-              to="/contact"
+              to="/#office"
               className="block md:inline-block mt-4 md:mt-0 no-underline text-white"
             >
-              Contact
+              Request Appointment
             </Link>
           </div>
         </div>

@@ -1,10 +1,10 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import styled from "styled-components";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import dogIllustration from "../images/dog-illustration.svg";
 import trecTeamImage from "../images/trec-team.jpg";
 import trecLogo from "../images/logo-trec.png";
 import clinicPhoto from "../images/clinic-photo-01.jpg";
@@ -20,6 +20,24 @@ const bgIMG = {
   backgroundImage: "url(" + smileBG + ")",
   backgroundPosition: "55% 40%"
 };
+
+const ImageWrapper = styled.div`
+  position: relative;
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: calc(100%);
+      top: 40px;
+      left: 40px;
+      z-index: -1;
+      background-color: #f69634;
+    }
+  }
+`;
 
 function IndexPage() {
   return (
@@ -130,7 +148,7 @@ function IndexPage() {
         </a>
         <div className="bg-black w-64 h-px absolute bottom-0" />
       </div>
-      <div className="flex flex-col items-center pt-20 pb-48 max-w-4xl mx-auto px-4">
+      <div className="flex flex-col items-center pt-20 pb-20 md:pb-56 max-w-4xl mx-auto px-4">
         <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight self-start md:self-center">
           Stop guessing what your fees are
         </h2>
@@ -158,14 +176,13 @@ function IndexPage() {
         </a>
       </div>
       <div className="bg-wall-gray">
-        <div className="relative flex flex-col items-center py-20 max-w-4xl mx-auto px-4 pt-48">
-          <div className="absolute bg-gray-400 w-full top-0 left-0 -mt-24">
-            <img
-              className="object-cover object-top h-64 w-full"
-              src={trecTeamImage}
-            />
+        <div className="relative flex flex-col items-center pb-20 md:py-20 max-w-4xl mx-auto md:pt-64">
+          <div class="md:absolute bg-gray-400 w-full top-0 left-0 mb-10 md:-mt-32">
+            <ImageWrapper className="">
+              <img className="object-cover object-top" src={trecTeamImage} />
+            </ImageWrapper>
           </div>
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row px-4">
             <div className="md:w-2/6 md:order-last mb-8">
               <img
                 className="md:mx-auto md:mt-20"
@@ -226,10 +243,10 @@ function IndexPage() {
               </p>
               <p>
                 <a
-                  className="underline"
+                  className="underline mt-2 inline-block"
                   href="mailto:nol sliderill@trecdental.com"
                 >
-                  nol sliderill@trecdental.com
+                  nolanhill@trecdental.com
                 </a>
               </p>
               <h3 className="font-serif text-2xl md:text-3xl mt-8 mb-2">
@@ -241,7 +258,8 @@ function IndexPage() {
                   href="https://goo.gl/maps/BYNfYUdCjrpcypmj9"
                   target="_blank"
                 >
-                  202 – 8 Nolan Hill Blvd NW Calgary, Alberta, T3R 0X2
+                  202 – 8 Nolan Hill Blvd NW Calgary, Alberta, T3R 0X2 (view on
+                  Google Map)
                 </a>
               </p>
               <h3 className="font-serif text-2xl md:text-3xl mt-8 mb-2">
