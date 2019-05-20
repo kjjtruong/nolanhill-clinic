@@ -20,7 +20,7 @@ function AboutPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
       />
 
-      <div className="bg-trec-orange flex flex-col justify-center text-center h-64 px-4 py-40">
+      <div className="bg-trec-orange flex flex-col justify-center text-center h-64 px-4 pb-20 pt-64">
         <h1 className="font-serif text-white text-5xl md:text-6xl font-bold leading-tight self-start md:self-center inline-block">
           Meet our team
         </h1>
