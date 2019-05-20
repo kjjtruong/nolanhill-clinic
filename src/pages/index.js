@@ -59,7 +59,7 @@ function IndexPage() {
           href="#office"
           className="bg-regal-blue text-lg text-white rounded-full py-4 px-8 mt-8 self-start md:self-center"
         >
-          Request appointment
+          Request an appointment
         </a>
       </HeaderSection>
       {/* Section - Welcome */}
