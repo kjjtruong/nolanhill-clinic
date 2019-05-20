@@ -65,7 +65,7 @@ function IndexPage() {
         <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight md:w-2/6">
           Welcome to the Nolan Hill Clinic
         </h2>
-        <p className="text-lg text-gray-600 mt-3 md:mt-0 md:w-4/6 md:pl-20">
+        <p className="text-lg text-gray-700 mt-3 md:mt-0 md:w-4/6 md:pl-20">
           Excited to be in the vibrant community of Nolan Hill, we invite you to
           experience our new dental office. Our goal is to build relationships
           with families in our neighbourhood while providing gentle and caring
@@ -152,7 +152,7 @@ function IndexPage() {
         <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight self-start md:self-center">
           Stop guessing what your fees are
         </h2>
-        <p class="text-lg text-gray-600 mt-3">
+        <p class="text-lg text-gray-700 mt-3">
           In 2017, the{" "}
           <a
             className="text-regal-blue text-lg font-semibold hover:underline"
@@ -168,7 +168,7 @@ function IndexPage() {
           proud to say that Nolan Hill Dental is ADA Fee Guide Compliant.
         </p>
         <a
-          className="text-regal-blue text-lg font-semibold border-2 border-regal-blue rounded-full py-4 px-8 mt-8 self-start md:self-center"
+          className="text-regal-blue text-lg border-2 border-regal-blue rounded-full py-4 px-8 mt-8 self-start md:self-center"
           href="http://www.dentalhealthalberta.ca/index/Pages/alberta-dental-fee-guide-5423"
           target="_blank"
         >
@@ -194,7 +194,7 @@ function IndexPage() {
               <h2 className="font-serif text-3xl md:text-4xl font-bold leading-tight">
                 Proud to be a part of the TREC Dental family
               </h2>
-              <p class="text-lg text-gray-600 mt-3">
+              <p class="text-lg text-gray-700 mt-3">
                 Nolan Hill Dental is a part of TREC Dental family and group of
                 dental clinics. TREC’s core values are right in the name,{" "}
                 <span className="font-black text-trec-blue">Teamwork</span>,{" "}
@@ -210,7 +210,7 @@ function IndexPage() {
                 spending our time doing good.
               </p>
               <a
-                className="text-regal-blue text-lg font-semibold border-2 border-regal-blue rounded-full inline-block py-4 px-8  mt-8"
+                className="text-regal-blue text-lg border-2 border-regal-blue rounded-full inline-block py-4 px-8  mt-8"
                 href="https://trecdental.com/"
                 target="_blank"
                 rel="noopener noreferrer"

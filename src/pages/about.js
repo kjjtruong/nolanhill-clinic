@@ -46,13 +46,13 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Dentist
             </p>
-            <p className="text-lg text-gray-600 ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+            <p className="text-lg text-gray-700 ">
+              "Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              electronic typesetting, remaining essentially unchanged."
             </p>
           </div>
         </div>
@@ -68,13 +68,13 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Dentist
             </p>
-            <p className="text-lg text-gray-600 ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
+            <p className="text-lg text-gray-700 ">
+              "Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              electronic typesetting, remaining essentially unchanged."
             </p>
           </div>
         </div>
@@ -90,15 +90,15 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Office Manager
             </p>
-            <p className="text-lg text-gray-600 ">
-              Being in the dental field for over 10 years working in both
+            <p className="text-lg text-gray-700 ">
+              "Being in the dental field for over 10 years working in both
               Australia and Canada has given me a love and appreciation for
               people and the quality dentistry we can provide. From modern
               dental technology to ensuring each patient feels genuinely cared
               for, at Nolan Hill Dental we want you finish your appointment with
               a smile. Our dental team is delighted to be in the new community
               of Nolan Hill and we look forward to providing you and your family
-              optimal dental care all year long.
+              optimal dental care all year long."
             </p>
           </div>
         </div>
@@ -114,13 +114,14 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Administrator
             </p>
-            <p className="text-lg text-gray-600 ">
-              I love working at Nolan Hill Dental because of the people! Whether
-              it's the amazing team I get to work with or building relationships
-              with our patients, it makes it a joy to come to work every day. I
-              always strive to be a positive influence and to help you have a
-              great experience with us, whether that's answering questions over
-              the phone or being a smiling face at the front desk.
+            <p className="text-lg text-gray-700 ">
+              "I love working at Nolan Hill Dental because of the people!
+              Whether it's the amazing team I get to work with or building
+              relationships with our patients, it makes it a joy to come to work
+              every day. I always strive to be a positive influence and to help
+              you have a great experience with us, whether that's answering
+              questions over the phone or being a smiling face at the front
+              desk."
             </p>
           </div>
         </div>
@@ -136,11 +137,11 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Dental Hygienist
             </p>
-            <p className="text-lg text-gray-600 ">
-              I love working at Nolan Hill Dental because it gives me the
+            <p className="text-lg text-gray-700 ">
+              "I love working at Nolan Hill Dental because it gives me the
               opportunity and the resources to be able to provide optimal care
               for my patients, as well as build positive dental experiences and
-              long lasting relationships.
+              long lasting relationships."
             </p>
           </div>
         </div>
@@ -156,12 +157,12 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Dental Hygienist
             </p>
-            <p className="text-lg text-gray-600 ">
-              The dental field has always fascinated me since I was young, and
+            <p className="text-lg text-gray-700 ">
+              "The dental field has always fascinated me since I was young, and
               I'm very lucky to have found Nolan Hill Dental! We have such a
               wonderful team working together to provide the best experience for
               our patients, and I'm excited to have the opportunity to get to
-              know you personally and help you improve your oral health!
+              know you personally and help you improve your oral health!"
             </p>
           </div>
         </div>
@@ -177,11 +178,11 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Dental Assistant
             </p>
-            <p className="text-lg text-gray-600 ">
-              I love being a dental assistant to help people smile and I like
+            <p className="text-lg text-gray-700 ">
+              "I love being a dental assistant to help people smile and I like
               seeing a variety of patients with different needs. My co-workers
               are very skilled, smart and have a great relationship with each
-              other and with patients...Nolan Hill is a great place to work!
+              other and with patients...Nolan Hill is a great place to work!"
             </p>
           </div>
         </div>
@@ -197,12 +198,12 @@ function AboutPage() {
             <p className="text-lg font-black uppercase tracking-wider my-2">
               Dental Assistant
             </p>
-            <p className="text-lg text-gray-600 ">
-              I love being a dental assistant for many reasons, but number one
+            <p className="text-lg text-gray-700 ">
+              "I love being a dental assistant for many reasons, but number one
               is because I love helping people and making a difference in
               peoples lives. Working at Nolan Hill Dental gives me the
               opportunity to be the outgoing, fun loving person I am while also
-              providing the best care possible!
+              providing the best care possible!"
             </p>
           </div>
         </div>
